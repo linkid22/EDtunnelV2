@@ -1,6 +1,6 @@
 // _worker.js
 import { connect } from "cloudflare:sockets";
-var userID = "03ce5f91-ddf0-4ebb-9e5e-b2e480a16353";
+var userID = "";
 var proxyIP = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.cloudflare.cyou'];
 var hostnames = "";
 
