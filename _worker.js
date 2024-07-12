@@ -654,7 +654,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
 
         body {
     z-index: 1;
-    background-image: url('https://raw.githubusercontent.com/aframdanicloud/background/main/1700102987317.jpg');
+    background-image: url('https://raw.githubusercontent.com/linkid22/bg/main/RDT_20220716_0234544804295001421339613.webp');
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -662,7 +662,6 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
     align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
-    backdrop-filter: blur(2px); /* Adjust the blur radius as needed */
   }
         pre {
 			background:  rgba(255, 255, 255, 0.0) ;
