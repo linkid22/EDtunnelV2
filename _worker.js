@@ -630,7 +630,7 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader, log) {
  */
 async function getVLESSConfig(userID, hostName, proxyIP) {
     try {
-        const response = await fetch(`https://ipwhois.app/json/${proxyIP}`);
+        const response = await fetch(`https://ipwhois.app/json/${proxyIP`);
         const data = await response.json();
         const proxyip = data.proxyStatus;
         const isp = data.isp;
@@ -638,7 +638,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
         const city = data.city;
         const vlessTls = `vless://${userID}\u0040${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${isp} (Noir7R)`;
         const vlessNtls = `vless://${userID}\u0040${hostName}:80?path=%2Fvless-ws&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#${isp} (Noir7R)`;   
-	const vlessTlsFormatted = vlessTls.replace(/ /g, '+');
+		const vlessTlsFormatted = vlessTls.replace(/ /g, '+');
         const vlessNtlsFormatted = vlessNtls.replace(/ /g, '+');
 		return `<!DOCTYPE html>
 <html lang="en">
