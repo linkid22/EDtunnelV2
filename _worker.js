@@ -3,7 +3,7 @@
 import { connect } from 'cloudflare:sockets';
 let userID = '11e1a114-6201-4ceb-ba4a-0d0a39a429a7';
 let proxyIP = '';
-let hostnames = ['acuvpn.xyz'];
+let hostnames = [''];
 
 
 if (!isValidUUID(userID)) {
@@ -654,7 +654,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
 
         body {
     z-index: 1;
-    background-image: url('https://raw.githubusercontent.com/aframdanicloud/background/main/1700102987317.jpg');
+    background-image: url('https://raw.githubusercontent.com/aframdanicloud/background/main/00.jpg');
     background-size: cover;
     height: 100vh;
     display: flex;
