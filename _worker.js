@@ -656,7 +656,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
             color: #000;
             margin: auto;
             font-size: 14px;
-            background: url('https://raw.githubusercontent.com/aframdanicloud/background/main/05.jpg') no-repeat center center fixed;
+            background: url('https://raw.githubusercontent.com/linkid22/bg/main/RDT_20220716_0234544804295001421339613.webp') no-repeat center center fixed;
             background-size: cover;
         }
         
