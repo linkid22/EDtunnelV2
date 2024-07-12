@@ -10,3 +10,4 @@ workers_dev = false
 [vars]
 UUID = "%uuid%"
 proxyip = "%proxyip%"
+hostnames = "%subdomain_name%"
