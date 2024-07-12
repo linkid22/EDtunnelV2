@@ -1,7 +1,7 @@
 // <!--GAMFC-->version base on commit 841ed4e9ff121dde0ed6a56ae800c2e6c4f66056, time is 2024-04-16 18:02:37 UTC<!--GAMFC-END-->.
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
-let userID = '2aeee1cd-954a-4f69-b2c0-2de59511707b';
+let userID = '11e1a114-6201-4ceb-ba4a-0d0a39a429a7';
 let proxyIP = '';
 let hostnames = ['acuvpn.xyz'];
 
