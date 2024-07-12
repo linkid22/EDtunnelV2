@@ -1,7 +1,7 @@
 // <!--GAMFC-->version base on commit 841ed4e9ff121dde0ed6a56ae800c2e6c4f66056, time is 2024-04-16 18:02:37 UTC<!--GAMFC-END-->.
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
-let userID = 'ddccd800-2c79-4d84-9bc7-8c5405d14cdc';
+let userID = '2aeee1cd-954a-4f69-b2c0-2de59511707b';
 let proxyIP = '';
 let hostnames = ['acuvpn.xyz'];
 
@@ -630,7 +630,7 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader, log) {
  */
 async function getVLESSConfig(userID, hostName, proxyIP) {
     try {
-        const response = await fetch(`https://ipwhois.app/json/${proxyIP`);
+        const response = await fetch(`https://ipwhois.app/json/${proxyIP}`);
         const data = await response.json();
         const proxyip = data.proxyStatus;
         const isp = data.isp;
@@ -653,15 +653,19 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
         }
 
         body {
-            color: #000;
-            margin: auto;
-            font-size: 14px;
-            background: url('https://raw.githubusercontent.com/linkid22/bg/main/RDT_20220716_0234544804295001421339613.webp') no-repeat center center fixed;
-            background-size: cover;
-        }
-        
+    z-index: 1;
+    background-image: url('https://raw.githubusercontent.com/aframdanicloud/background/main/1700102987317.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    backdrop-filter: blur(2px); /* Adjust the blur radius as needed */
+  }
         pre {
-			background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+			background:  rgba(255, 255, 255, 0.0) ;
 			color: black ;
             white-space: pre-wrap;
             word-wrap: break-word;
@@ -683,8 +687,8 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
         
         main {
             word-wrap: break-word;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-            color: #451428;
+            background:  rgba(255, 255, 255, 0.1) ;
+            color: red;
             max-width: 350px;
             height: auto;
             border-radius: 30px;
@@ -741,7 +745,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
         }
         
         .brand {
-            background: linear-gradient(90deg, #0F111F, #D91D3F, #0F111F);
+            background: linear-gradient(90deg, #0F111F, red, #0F111F);
             background-size: 200% 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -759,7 +763,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
             display: block;
             height: 4px;
             width: 100%;
-            background: linear-gradient(90deg, #0F111F, #D91D3F, #0F111F);
+            background: linear-gradient(90deg, #0F111F, red, #0F111F);
             background-size: 200% 200%;
             position: absolute;
             bottom: -2px;
@@ -792,6 +796,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
     </style>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
+   <div class="container">
 <body>
     <main>
         <center>
