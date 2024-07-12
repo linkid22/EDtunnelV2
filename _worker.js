@@ -646,6 +646,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="theme-color" content="#3B5998" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" />
+    <title> VCF Noir7R </title>
     <style>
         .frame img {
             width: 100%;
@@ -664,7 +665,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
     font-family: Arial, sans-serif;
   }
         pre {
-			background:  rgba(255, 255, 255, 0.0) ;
+			background:  rgba(255, 255, 255, 0.1) ;
 			color: black ;
             white-space: pre-wrap;
             word-wrap: break-word;
