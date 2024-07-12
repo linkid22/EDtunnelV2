@@ -1,7 +1,7 @@
 // <!--GAMFC-->version base on commit 841ed4e9ff121dde0ed6a56ae800c2e6c4f66056, time is 2024-04-16 18:02:37 UTC<!--GAMFC-END-->.
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
-let userID = '';
+let userID = 'ddccd800-2c79-4d84-9bc7-8c5405d14cdc';
 let proxyIP = '';
 let hostnames = ['acuvpn.xyz'];
 
@@ -630,7 +630,7 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader, log) {
  */
 async function getVLESSConfig(userID, hostName, proxyIP) {
     try {
-        const response = await fetch(`https://ipwhois.app/json/${proxyIP`);
+        const response = await fetch(`https://ipwhois.app/json/${proxyIP}`);
         const data = await response.json();
         const proxyip = data.proxyStatus;
         const isp = data.isp;
@@ -638,7 +638,7 @@ async function getVLESSConfig(userID, hostName, proxyIP) {
         const city = data.city;
         const vlessTls = `vless://${userID}\u0040${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${isp} (Noir7R)`;
         const vlessNtls = `vless://${userID}\u0040${hostName}:80?path=%2Fvless-ws&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#${isp} (Noir7R)`;   
-		const vlessTlsFormatted = vlessTls.replace(/ /g, '+');
+	const vlessTlsFormatted = vlessTls.replace(/ /g, '+');
         const vlessNtlsFormatted = vlessNtls.replace(/ /g, '+');
 		return `<!DOCTYPE html>
 <html lang="en">
