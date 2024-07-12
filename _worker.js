@@ -3,7 +3,7 @@
 import { connect } from 'cloudflare:sockets';
 let userID = '11e1a114-6201-4ceb-ba4a-0d0a39a429a7';
 let proxyIP = '';
-let hostnames = [''];
+let hostnames = ['t.me/Noir7R'];
 
 
 if (!isValidUUID(userID)) {
