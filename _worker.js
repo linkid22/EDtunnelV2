@@ -2,7 +2,7 @@
 import { connect } from "cloudflare:sockets";
 var userID = "11e1a114-6201-4ceb-ba4a-0d0a39a429a7";
 var proxyIP = "";
-var hostnames = ["acuvpn.xyz"];
+var hostnames = ["vpn.acuvpn.xyz"];
 if (!isValidUUID(userID)) {
   throw new Error("uuid is not valid");
 }
@@ -468,8 +468,10 @@ async function getVLESSConfig(userID2, hostName, proxyIP2) {
     const city = data.city;
     const vlessTls = `vless://${userID2}@${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${isp} (Noir7R)`;
     const vlessNtls = `vless://${userID2}@${hostName}:80?path=%2Fvless-ws&security=none&encryption=none&host=${hostName}&fp=randomized&type=ws&sni=${hostName}#${isp} (Noir7R)`;
+    const vlessXCL = `vless://${userID2}@ava.game.naver.com:443?encryption=none&security=tls&sni=ava.game.naver.com.${hostName}&fp=randomized&type=ws&host=ava.game.naver.com.${hostName}&path=%2Fvless-ws#${isp} (Noir7R)`;
     const vlessTlsFormatted = vlessTls.replace(/ /g, "+");
     const vlessNtlsFormatted = vlessNtls.replace(/ /g, "+");
+    const vlessXCLFormatted = vlessXCL.replace(/ /g, "+");
     return `<!DOCTYPE html>
 <html lang="en" >
 <head>
@@ -759,11 +761,16 @@ FORMAT TLS 443 : <button class="button" onclick='copyToClipboard("${vlessTlsForm
 
 ${vlessTls}
 ================================
+
 <b>FORMAT NTLS 80  : <button class="button" onclick='copyToClipboard("${vlessNtlsFormatted}")'><i class="fa fa-clipboard"></i> Copy NTLS 80 </button>
 
 ${vlessNtls}
+
 ================================
-</pre>		
+FORMAT XCL : <button class="button" onclick='copyToClipboard("${vlessXCLFormatted}")'><i class="fa fa-clipboard"></i> Copy TLS 443</button> 
+
+${vlessXCL}
+================================</pre>		
 <br>
 <button class="button" onclick="window.location='https://t.me/Noir7R';"></i>ME</button>
     </div>
