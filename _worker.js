@@ -758,13 +758,11 @@ async function getVLESSConfig(userID2, hostName, proxyIP2) {
 FORMAT TLS 443 : <button class="button" onclick='copyToClipboard("${vlessTlsFormatted}")'><i class="fa fa-clipboard"></i> Copy TLS 443</button> 
 
 ${vlessTls
-vmess://eyJhZGQiOiJhdmEuZ2FtZS5uYXZlci5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImF2YS5nYW1lLm5hdmVyLmNvbS5kby5ib2Rvbmd2cG4ueHl6IiwiaWQiOiI1NWI3MDE2YS0zYjFlLTQ5OWQtYjM2YS1kZTM2NDIzOTI5OTMiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdm1lc3MtYm9kb25nIiwicG9ydCI6IjQ0MyIsInBzIjoiWENMLUFWQSIsInNjeSI6ImF1dG8iLCJzbmkiOiJhdmEuZ2FtZS5uYXZlci5jb20uZG8uYm9kb25ndnBuLnh5eiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9
 ================================
 
 <b>FORMAT NTLS 80  : <button class="button" onclick='copyToClipboard("${vlessNtlsFormatted}")'><i class="fa fa-clipboard"></i> Copy NTLS 80 </button>
 
 ${vlessNtls}
-vmess://eyJhZGQiOiJhdmEuZ2FtZS5uYXZlci5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImF2YS5nYW1lLm5hdmVyLmNvbS5kby5ib2Rvbmd2cG4ueHl6IiwiaWQiOiI1NWI3MDE2YS0zYjFlLTQ5OWQtYjM2YS1kZTM2NDIzOTI5OTMiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdm1lc3MtYm9kb25nIiwicG9ydCI6IjQ0MyIsInBzIjoiWENMLUFWQSIsInNjeSI6ImF1dG8iLCJzbmkiOiJhdmEuZ2FtZS5uYXZlci5jb20uZG8uYm9kb25ndnBuLnh5eiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9</link>
 ================================</pre>		
 <br>
 <button class="button" onclick="window.location='https://t.me/Noir7R';"></i>ME</button>
