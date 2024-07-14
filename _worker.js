@@ -757,13 +757,13 @@ async function getVLESSConfig(userID2, hostName, proxyIP2) {
 ================================
 FORMAT TLS 443 : <button class="button" onclick='copyToClipboard("${vlessTlsFormatted}")'><i class="fa fa-clipboard"></i> Copy TLS 443</button> 
 
-${vlessTls
+${vlessTls}
 ================================
-
 <b>FORMAT NTLS 80  : <button class="button" onclick='copyToClipboard("${vlessNtlsFormatted}")'><i class="fa fa-clipboard"></i> Copy NTLS 80 </button>
 
 ${vlessNtls}
-================================</pre>		
+================================
+</pre>		
 <br>
 <button class="button" onclick="window.location='https://t.me/Noir7R';"></i>ME</button>
     </div>
