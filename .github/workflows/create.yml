@@ -20,6 +20,7 @@ on:
         description: "Valid IP proxy"
         required: true
         type: string
+        default: 35.219.50.99
 jobs:
     build:
         name: Build
@@ -45,5 +46,5 @@ jobs:
           - name: Deploy app
             uses: cloudflare/wrangler-action@v3
             with:
-              apiToken: mLIEI2YA7h_YkqN4_C5sjxsnwAZwzmDnD5BxzzKF
-              accountId: a309fa1b914c8d48aaf5768b5c9a9bce
+              apiToken: zgojhjB7cvWOqOckEl71sPfi05RiNC6TDseAyHGw
+              accountId: 80517f0bf048930a68577b1c6b1be630
